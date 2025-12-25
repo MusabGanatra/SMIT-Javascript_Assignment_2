@@ -5,26 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
 </head>
 
 <body>
-
-
     <script>
-        var a = alert("Hello java script")
+        name = {"musab": 100 ,"nasir": 80,"abdullah": 60,"owais":40}
+        // User se input lena
+        var marks = prompt("Apne marks enter karein (0 - 100):");
 
-        var b = "This is string and This is number"
+        // String ko number mein convert karna
+        marks = Number(marks);
 
-        var c = 70
+        // Math Expression
+        var percentage = (marks / 100) * 100;
 
-        var musabGanatra = "this variable is a Legal way and this is a illegal way Example: var 12jjddj = 123"
-
-        console.log(a, b, c, musabGanatra)
-        console.log(typeof a, b, c, musabGanatra)
-        let name = prompt("What is your name?");
-        alert("Hello, " + name);
+        // Conditions check karna
+        if (marks >= 80 && marks <= 100) {
+            document.write("Grade: A+ <br>");
+            document.write("Excellent Result");
+        }
+        else if (marks >= 70 && marks < 80) {
+            document.write("Grade: A <br>");
+            document.write("Very Good");
+        }
+        else if (marks >= 60 && marks < 70) {
+            document.write("Grade: B <br>");
+            document.write("Good");
+        }
+        else if (marks >= 50 && marks < 60) {
+            document.write("Grade: C <br>");
+            document.write("Pass");
+        }
+        else if (marks >= 0 && marks < 50) {
+            document.write("Grade: F <br>");
+            document.write("Fail");
+        }
+        else {
+            document.write("Invalid Marks Entered");
+        }
     </script>
+
+
 </body>
 
 </html>
